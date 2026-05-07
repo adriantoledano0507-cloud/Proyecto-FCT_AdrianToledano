@@ -1,0 +1,138 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+    background: #f5f8fc; 
+    color: #1c2c44; 
+    line-height: 1.6; 
+}
+
+.header {
+    background: white; 
+    padding: 30px 20px; 
+    text-align: center; 
+    box-shadow: 0 3px 12px rbga(0, 0, 0, 0.18); 
+}
+
+.logo {
+    width: 320px; 
+    max-width: 90%; 
+    height: auto; 
+}
+
+.nav {
+    background:linear-gradient(135deg,#0a2240,#123f73);
+    display: flex; 
+    justify-content: center; 
+    padding: 20px; 
+    column-gap: 30px; 
+}
+
+.nav a {
+    background: white; 
+    color: black;
+    border: none; 
+    padding: 14px 35px; 
+    border-radius: 8px; 
+    font-size: 16px; 
+    font-weight: 600; 
+    cursor: pointer; 
+    text-decoration: none; 
+}
+
+.nav a:hover{
+    background: gold; 
+    transform:translateY(-2px);
+    box-shadow:0 6px 15px rgba(0,102,204,.25);
+}
+
+.main {
+    width: 85%;
+    max-width: 1200px;
+    margin: 50px auto; 
+}
+
+.seccion {
+    background: white; 
+    margin-bottom: 45px; 
+    padding: 35px; 
+    border-radius: 14px; 
+}
+
+.seccion h2 {
+    font-size: 30px; 
+    color: #0a2240; 
+    margin-bottom: 30px; 
+    border-left: 6px solid #00a3e0; 
+    padding-left: 15px; 
+}
+
+.carrusel {
+    display: flex;
+    justify-content: center; 
+    padding: 10px;     
+    gap: 25px;
+    overflow-x:auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+}
+
+.carrusel img{
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+    display: inline-block;
+}
+
+.carrusel img:hover {
+    transform:scale(1.05); 
+    box-shadow:0 10px 25px rgba(0,0,0,2.22);
+}
+
+.informacion {
+    font-size: 18px; 
+    color: #405066; 
+}
+
+.informacion p {
+    margin-bottom: 22px; 
+    text-align: justify; 
+}
+
+.footer {
+    background: #0a2240; 
+    color: white; 
+    text-align: center; 
+    padding: 30px 20px; 
+}
+
+.footer p{
+    margin-bottom: 1px; 
+    opacity: 0.9; 
+}
+
+.redes {
+    margin-top: 25px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    column-gap: 25px; 
+}
+
+.redes img{
+    width: 38px; 
+    height: 38px; 
+    object-fit: contain; 
+    cursor: pointer; 
+}
+
+.redes img:hover {
+    transform: scale(1.2); 
+    opacity: 0.8; 
+}
